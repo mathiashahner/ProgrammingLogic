@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int adjacentElementsProduct(arr_integer inputArray);
+
+int main()
+{
+    char buffer[] = {0,1,6,7,34,54,1,4,5,7,3,454,42,23,0}
+    
+    printf("result=[%d]\n"adjacentElementsProduct(buffer));
+
+    return 0;
+}
+
+int adjacentElementsProduct(arr_integer inputArray)
+{
+    int adj1, adj2, temp, result;
+    
+    adj1 = inputArray.arr[0];
+    adj2 = inputArray.arr[1];
+    result = adj1 * adj2;
+    
+    for( int i=0; i<inputArray.size-1; i++ )
+    {
+        adj1 = inputArray.arr[i];
+        adj2 = inputArray.arr[i+1];
+        temp = adj1 * adj2;
+        
+        if( temp > result )
+            result = temp;
+        
+        printf("adj1=[%d] adj2=[%d] temp=[%d] result=[%d]\n", adj1, adj2, temp, result);
+    }
+    
+    return result;
+}
