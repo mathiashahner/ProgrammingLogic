@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 
 int RomanToDecimal( char * numRoman );
@@ -8,18 +9,27 @@ int main()
     char numRoman[21];
     int numDecimal;
 
-    printf("\nInput with a Roman Number: ");
-    scanf("%20s", numRoman);   
-    
-    numDecimal = RomanToDecimal( numRoman );
+    system("cls");
+    printf("Enter a Roman Number: ");
+    scanf("%20s", numRoman);
 
-    if ( numDecimal == -1 )
+    while( strcmp( numRoman, "exit" ) != 0 )
     {
-        printf("\nInvalid Input!\n\n");
-    }
-    else
-    {
-        printf("\n%s = %d\n\n", numRoman, numDecimal);           
+        numDecimal = RomanToDecimal( numRoman );
+
+        if ( numDecimal == -1 )
+        {
+            printf("\nInvalid Input!\n\n");
+        }
+        else
+        {
+            printf("\n%s = %d\n\n", numRoman, numDecimal);           
+        }
+
+        printf("-----------------------------------------");
+        printf("\n\nEnter a Roman Number or type 'exit': ");
+        scanf("%20s", numRoman);        
+        system("cls");
     }
 
     return 0;
@@ -83,7 +93,7 @@ int RomanToDecimal( char * numRoman )
             }  
             else
             {
-                printf("\nInvalid Input\nCharacter '%c' is not a Roman Numeral!\n\n", numRoman[count]);
+                printf("\nInvalid Input\nCharacter '%c' is not a Roman Numeral!\n", numRoman[count]);
                 numDecimal = -1;
                 break;
             }
