@@ -1,3 +1,7 @@
+/*
+    Roman Number to decimal number converter
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
