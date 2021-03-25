@@ -15,6 +15,7 @@ int main()
     int buffer[] = {0,1,2,3,4,5,6,7,2,3,0};
     int tam = sizeof(buffer) / sizeof(buffer[0] - 1);
 
+    system("cls");
     printf("\n\nresult=[%d]\n\n", adjacentElementsProduct(buffer, tam));
 
     return 0;

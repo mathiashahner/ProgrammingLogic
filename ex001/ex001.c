@@ -32,7 +32,7 @@ int main()
 
         printf("-----------------------------------------");
         printf("\n\nEnter a Roman Number or type 'exit': ");
-        scanf("%20s", numRoman);        
+        scanf("%20s", numRoman);   
         system("cls");
     }
 
