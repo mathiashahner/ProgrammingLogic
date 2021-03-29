@@ -10,13 +10,38 @@
         - You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 */
 
+#include <stdio.h>
+#include <stdbool.h>
+
+bool almostIncreasingSequence(int sequence[], int tam);
+
 int main()
 {
-    int vector[] = {2,9,4,6};
-    int tam = sizeof(vector) / sizeof(vector[0]);
+    int sequence[] = {5,1,3};
+    int tam = sizeof(sequence) / sizeof(sequence[0]);
 
     system("cls");
-    printf("\nQtd of statues = %d\n\n", makeArrayConsecutive2( vector, tam));
+    printf("\nIs sequence possible? %d\n\n", almostIncreasingSequence(sequence, tam));
 
     return 0;
+}
+
+bool almostIncreasingSequence(int sequence[], int tam)
+{
+    int bad=0, count;
+
+    for(count=1; count<tam-1; count++) 
+    
+    if(sequence[count] <= sequence[count-1])
+    {
+        bad++;
+
+        if(bad > 1)
+            return false;
+
+        if((sequence[count] <= sequence[count-2]) && (sequence[count+1] <= sequence[count-1]))
+            return false;
+    }
+
+    return true;
 }
