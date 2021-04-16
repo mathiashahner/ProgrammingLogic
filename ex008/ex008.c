@@ -19,9 +19,8 @@
 */
 
 #include <stdio.h>
-#include <stdbool.h>
 
-bool matrixElementsSum(int matrix[], int tam);
+int matrixElementsSum(int matrix[], int tam);
 
 int main()
 {
@@ -37,7 +36,28 @@ int main()
     return 0;
 }
 
-bool matrixElementsSum(int matrix[], int tam)
+int matrixElementsSum(int matrix[], int tam)
 {
-    return 0;
+    int result = 0;
+    int vector[matrix[0].size];
+
+    for(int i=0; i<matrix[0].size; i++)
+        vector[i] = 0;
+
+    for(int i=0; i<matrix.size; i++)
+    {        
+        for(int j=0; j<matrix[i].size; j++)
+        {
+            if(matrix[i][j] == 0)
+                vector[j] = 1;
+
+            if(vector[j] == 0)
+                result += matrix[i][j];
+
+            printf("%d", vector[j]);
+        }
+        printf("\n");
+        printf("result=[%d]\n", result);
+    }
+    return result;
 }
