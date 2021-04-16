@@ -39,14 +39,14 @@ int main()
 int matrixElementsSum(int matrix[], int tam)
 {
     int result = 0;
-    int vector[matrix[0].size];
+    int vector[strlen(matrix[0])];
 
-    for(int i=0; i<matrix[0].size; i++)
+    for(int i=0; i<strlen(matrix[0]); i++)
         vector[i] = 0;
 
-    for(int i=0; i<matrix.size; i++)
+    for(int i=0; i<tam; i++)
     {        
-        for(int j=0; j<matrix[i].size; j++)
+        for(int j=0; j<strlen(matrix[i]; j++)
         {
             if(matrix[i][j] == 0)
                 vector[j] = 1;
