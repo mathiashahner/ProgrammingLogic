@@ -26,7 +26,7 @@ char * reverseInParentheses( char * inputString );
 int main()
 {
     system("cls");
-    printf("Common Character=[%s]\n", reverseInParentheses("foo(bar(baz))blim"));
+    printf("Reverse In Parentheses=[%s]\n", reverseInParentheses("foo(bar(baz))blim"));
 
     return 0;
 }

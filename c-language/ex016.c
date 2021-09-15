@@ -19,7 +19,7 @@ bool isLucky(int n);
 int main()
 {
     system("cls");
-    printf("Common Character=[%d]\n", isLucky( 1230 ));
+    printf("Is Lucky? %s\n", isLucky( 1230 ) == true ? "Yes" : "No" );
 
     return 0;
 }

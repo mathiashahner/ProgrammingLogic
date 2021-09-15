@@ -15,7 +15,7 @@ int commonCharacterCount(char * s1, char * s2);
 int main()
 {
     system("cls");
-    printf("Common Character=[%d]\n", allLongestStrings("aabcc", "adcaa"));
+    printf("Common Character=[%d]\n", commonCharacterCount("aabcc", "adcaa"));
 
     return 0;
 }
