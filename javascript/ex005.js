@@ -1,9 +1,9 @@
-fizzBuzz(9);
+fizzBuzz('a');
 
 function fizzBuzz(num)
 {
    if ( typeof(num) !== 'number' )
-      console.log("O valor informado não é um número");
+      console.log("The value entered is not a number");
    else
    {
       let msg = "";

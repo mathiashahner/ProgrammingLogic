@@ -6,7 +6,7 @@
         - 7 and 3 produce the largest product.
 */
 
-let array = [0,1,2,3,4,5,6,7,2,3,0];
+let array = [3, 6, -2, -5, 7, 3];
 
 console.log( adjacentElementsProduct(array));
 
