@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 14 20:42:34 2020
-
-@author: Mathias
-"""
-
 fixo = {}
 outro = {}
 rendimentos = {}

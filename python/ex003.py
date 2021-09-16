@@ -1,12 +1,4 @@
-    # -*- coding: utf-8 -*-
-"""
-Created on Sat Jun  6 17:57:32 2020
-
-@author: Mathias
-"""
-
 produtos = []
-
 
 def novo():
 
@@ -27,7 +19,6 @@ def novo():
         nome = input("ENTER --> Menu Inicial\n\nNome do produto: ")
 
     return print("\n------------------------------------\n")
-
 
 def consultar():
 
@@ -74,7 +65,6 @@ def consultar():
         aux = input("Informe o nome do produto: ")
 
     return print("\n------------------------------------\n")
-
 
 print("\n\n------- Comparador de Preços -------\n\n")
 

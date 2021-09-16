@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 10 18:38:12 2020
-
-@author: Mathias
-"""
-
 n = 1
 l = []
 

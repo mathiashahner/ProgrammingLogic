@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  3 19:53:17 2020
-
-@author: Mathias
-"""
-
 print("\n\n\n-=-=-=-=-=-=-=-=-=- Calculadora para Notas de Turmas -=-=-=-=-=-=-=-=-=-\n\n")
 
 turma = []
