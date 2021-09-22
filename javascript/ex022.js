@@ -35,3 +35,50 @@ const booksByCategory = [
    },
 ];
 
+console.log(`Categories:`);
+console.log(listCategoryAndBooks());
+
+console.log(`Authors:`);
+console.log(listAuthors());
+
+console.log(`Books:`);
+console.log(listBooksByAuthor("George S. Clason"));
+
+function listCategoryAndBooks()
+{
+    for( item of booksByCategory )
+    {
+        console.log(`${item.category}: ${item.books.length} Books`);
+    }
+}
+
+function listAuthors()
+{
+    let authors = [];
+
+    for( item of booksByCategory )
+    {
+        for( value of item.books )
+        {
+            if( !authors.includes(value.author))
+            {
+                console.log(value.author);
+                authors.push(value.author);
+            }
+        }
+    }
+}
+
+function listBooksByAuthor(author)
+{
+    for( item of booksByCategory )
+    {
+        for( value of item.books )
+        {
+            if( author === value.author )
+            {
+                console.log(value.title);
+            }
+        }
+    }
+}
