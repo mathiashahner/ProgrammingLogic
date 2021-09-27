@@ -1,7 +1,7 @@
 /*
 */
 
-console.log(solucao("crescer", "quero fazer o crescer para crescer profissioa"));
+console.log(solucao("Crescer", "Quero fazer o Crescer para crescer profissionalmente"));
 
 function solucao(palavra, frase) {
    
