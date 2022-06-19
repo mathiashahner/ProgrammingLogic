@@ -1,2 +1,3 @@
-# ProgrammingLogic
+# Programming Logic
+
 Programming Logic Exercises
